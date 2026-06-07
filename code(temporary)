@@ -1,0 +1,42 @@
+def career_chatbot():
+    print("====================================")
+    print(" Welcome to CareerCompass AI ")
+    print(" Your Career Guidance Chatbot ")
+    print(" Type 'exit' to quit")
+    print("====================================")
+
+    while True:
+        user_input = input("\nYou: ").lower()
+
+        if user_input == "exit":
+            print("Bot: Thank you for using CareerCompass AI. Good luck with your future!")
+            break
+
+        elif "software engineer" in user_input:
+            print("Bot: To become a Software Engineer, learn programming languages such as Python, Java, or C++, work on projects, and practice coding regularly.")
+
+        elif "data scientist" in user_input:
+            print("Bot: Data Science requires knowledge of Python, statistics, machine learning, and data visualization tools.")
+
+        elif "doctor" in user_input:
+            print("Bot: To become a Doctor in India, complete MBBS after qualifying NEET and pursue specialization if desired.")
+
+        elif "civil services" in user_input or "ias" in user_input:
+            print("Bot: To become an IAS officer, prepare for and clear the UPSC Civil Services Examination.")
+
+        elif "teacher" in user_input:
+            print("Bot: Teaching careers usually require a bachelor's degree and teaching qualifications such as B.Ed.")
+
+        elif "salary" in user_input:
+            print("Bot: Salaries vary depending on profession, experience, skills, and location.")
+
+        elif "skills" in user_input:
+            print("Bot: Important skills include communication, problem-solving, teamwork, adaptability, and continuous learning.")
+
+        elif "career" in user_input:
+            print("Bot: Tell me which career you are interested in, and I will provide guidance.")
+
+        else:
+            print("Bot: Sorry, I don't have information about that yet. Try asking about careers, skills, salary, software engineering, data science, teaching, medicine, or civil services.")
+
+career_chatbot()
